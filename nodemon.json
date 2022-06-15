@@ -1,0 +1,12 @@
+{
+  "watch": ["src"],
+  "ext": "ts,json",
+  "ignore": [
+    "src/**/*.spec.ts",
+    "docs/*",
+    "logs/*",
+    "node_modules/*",
+    ".vscode/*"
+  ],
+  "exec": "node --inspect=0.0.0.0:5801 --require ts-node/register ./src/server.ts"
+}

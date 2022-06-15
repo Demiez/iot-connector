@@ -1,0 +1,11 @@
+{
+  "serviceConfig": {
+    "port": 5000
+  },
+  "mongoConnection": "mongodb://user:password@mongo",
+  "rabbitConnection": "amqp://user:password@rabbitmq/iot-connector",
+  "IoTHost": "iot-orchestrator",
+  "IoTPort": "80",
+  "IoTApiHost": "http://iot-connector/api/v1/",
+  "solutionName": "iot-connection-data"
+}

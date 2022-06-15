@@ -76,3 +76,7 @@ That's why the datasource data is persisted (in other words emulated) with `virt
 
 - http
 - amqp/mqtt
+
+# Dependencies substitution
+
+- "@iot-configurator/sdk": "2.5.5",
