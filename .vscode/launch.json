@@ -1,0 +1,34 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "attach",
+      "name": "Attach to Remote",
+      "protocol": "inspector",
+      "address": "localhost",
+      "port": 5801
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Mocha Tests",
+      "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+      "args": [
+        "--reporter",
+        "spec",
+        "--require",
+        "ts-node/register",
+        "--timeout",
+        "1000000",
+        "--colors",
+        "--recursive",
+        "--inspect-brk=0.0.0.0:5801",
+        "${workspaceFolder}/test/**/*.ts"
+      ],
+      "internalConsoleOptions": "openOnSessionStart",
+      "skipFiles": ["<node_internals>/**"],
+      "env": { "TEST_SKIP_SDK_INIT": "true" }
+    }
+  ]
+}
