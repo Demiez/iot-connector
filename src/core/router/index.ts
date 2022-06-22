@@ -1,11 +1,5 @@
 import { Application, Request, Response } from 'express';
 import Container from 'typedi';
-import {
-  LocalCacheController,
-  SignalController,
-  TransactionController,
-  BatchSignalController,
-} from '../../modules';
 import { APP_ROOT, APP_ROOT_MESSAGE } from '../constants';
 import { BaseStatus } from '../enums/base-statuses.enum';
 import { MetadataKeysEnum } from '../enums/metadata-keys.enum';
@@ -20,12 +14,7 @@ export default (app: Application): void => {
       .send(new StandardResponseViewModel({}, APP_ROOT_MESSAGE, BaseStatus.OK));
   });
 
-  [
-    LocalCacheController,
-    SignalController,
-    TransactionController,
-    BatchSignalController,
-  ].forEach((controller: unknown) => {
+  [].forEach((controller: unknown) => {
     const controllerInstance = Container.get(controller);
 
     const prefix = Reflect.getMetadata(MetadataKeysEnum.PREFIX, controller);

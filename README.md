@@ -2,9 +2,9 @@
 
 `please note, this project is provided as example for base IoT implementation. SDK, DataSource service and Orchestrator are not available in public access`
 
-'IoT Connector' is a part of the IoT data flow to stream data to and from System through Orchestrator with help of connectors, consisting of sensors, which stream data into platform, and publishers, which stream data out of platform.<br>
+`IoT Connector` is a part of `IoT` data flow to stream data to and from System through Orchestrator with help of connectors, consisting of sensors, which stream data into platform, and publishers, which stream data out of platform. Also as a part of `Edge Computing` Paradigm `IoT Connector` optimizes devices and connected applications by bringing them closer to the source of the data (DataSource concept)<br>
 
-'IoT Connector' receives signal data from IoT Middleware via REST API calls, processes data, manipulates IOT sensors/publishers (sensor/publisher configuration modules) from received data via transaction requests to IoT Orchestrator with help of SDK. Data Source configurations are recieved via REST API requests to IoT DataSource Service. Processed data of sensors/publishers modules, variables, settings is stored in cache (node-cache) and Mongo DB.<br>
+`IoT Connector` receives signal data from IoT Middleware via REST API calls, processes data, manipulates IOT sensors/publishers (sensor/publisher configuration modules) from received data via transaction requests to IoT Orchestrator with help of SDK. Data Source configurations are recieved via REST API requests to IoT DataSource Service. Processed data of sensors/publishers modules, variables, settings is stored in cache (node-cache) and Mongo DB.<br>
 
 A possibility to retrieve info about sensors, publishers, variables grouped in signal abstraction is implemented with use of REST API calls to IoT Connector.<br>
 
@@ -20,7 +20,7 @@ IoT Connector layered architecture is shown on below diagram
 
 # DataSource Concept
 
-DataSource concept serves for registration of protocol, architecture or platform-based tools, which allow connector management, based on the predefined type. DataSource approach is planned to simplify the understanding of structure to IoT devices, thus allowing user to focus more on signal abstraction usage.
+`DataSource concept` serves for registration of protocol, architecture or platform-based tools, which allow connector management, based on the predefined type. DataSource approach is planned to simplify the understanding of structure to IoT devices, thus allowing user to focus more on signal abstraction usage.
 
 The following DataSources are available (in parentheses there is a link to IoT provider/protocol/tool used):
 
