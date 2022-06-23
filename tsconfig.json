@@ -9,12 +9,9 @@
     "emitDecoratorMetadata": true,
     "resolveJsonModule": true,
     "sourceMap": true,
-    "baseUrl": ".",
+    "baseUrl": "src",
     "paths": {
-      "@iot-configurator/sdk": ["libs/@iot-configurator/sdk/index.ts"],
-      "@iot-configurator/sdk/interfaces": [
-        "libs/@iot-configurator/sdk/interfaces/index.ts"
-      ]
+      "@iot-connector/core": ["core/index.ts"]
     }
   },
   "include": ["src/**/*.ts"],

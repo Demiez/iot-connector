@@ -35,6 +35,7 @@
   "license": "MIT",
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "9.0.9",
+    "@demiez/iot-sdk": "1.0.5",
     "axios": "0.24.0",
     "cookie-parser": "1.4.5",
     "cors": "2.8.5",

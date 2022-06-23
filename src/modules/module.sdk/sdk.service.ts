@@ -1,12 +1,12 @@
 import * as JsonSchemaParser from '@apidevtools/json-schema-ref-parser';
-import { IotSDK } from '@iot-configurator/sdk';
+import { IotSDK } from '@demiez/iot-sdk';
 import {
   IModuleSchema,
   IModuleSchemaTemplate,
   IIoTModuleApi,
   ITransactionRequestBody,
   ITransactionResponse,
-} from '@iot-configurator/sdk/interfaces';
+} from '@demiez/iot-sdk';
 import { cloneDeep, has, isEmpty } from 'lodash';
 import { Service } from 'typedi';
 import { config } from '../../config';

@@ -1,4 +1,4 @@
-import { ITransactionResponse } from '@iot-configurator/sdk/interfaces';
+import { ITransactionResponse } from '@demiez/iot-sdk';
 import { CommandKeyOperationBaseModel } from './command-key-operation.bm';
 import { OperationBaseModel } from './operation.bm';
 
